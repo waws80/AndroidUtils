@@ -29,4 +29,29 @@
         </attr>
     </declare-styleable>
 
+    <!--自定义侧滑布局-->
+    <declare-styleable name="SwipeLayout">
+        <!--动画的代码-->
+        <attr name="sm_type" format="integer"/>
+        <!--滑出菜单的范围-->
+        <attr name="sm_dragOffset" format="dimension"/>
+        <!--滑出菜单距边界的值-->
+        <attr name="sm_menuOffset" format="dimension"/>
+        <!--滑动开始的缩放值-->
+        <attr name="sm_startScale" format="float"/>
+        <!--滑动开始的alpha值-->
+        <attr name="sm_startAlpha" format="float"/>
+        <!--滑动开始的3D旋转角度-->
+        <attr name="sm_start3Dangle" format="integer"/>
+        <!--全局颜色-->
+        <attr name="sm_fullColor" format="color"/>
+        <!--全局背景-->
+        <attr name="sm_fullImage" format="reference"/>
+        <!--以下方法只在设置全局图片背景时候有用-->
+        <!--标题栏颜色-->
+        <attr name="sm_statusColor" format="color"/>
+        <!--全局背景的模糊度-->
+        <attr name="sm_fullImageBlur" format="float"/>
+    </declare-styleable>
+
 </resources>
