@@ -27,7 +27,7 @@ import top.waws.library.widget.swiplayout.utils.SizeUtil;
 /**
  * @className: SwipeLayout
  * @author: thanatos
- * @des
+ * @des 侧滑布局
  */
 public class SwipeLayout extends ViewGroup {
 
