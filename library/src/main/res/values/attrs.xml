@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--放大缩小图片-->
+    <declare-styleable name="ScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <!--自定义TabLayout属性-->
+    <declare-styleable name="TabLayout">
+        <attr name="tabIndicatorWidth" format="dimension|reference"/>
+        <attr name="tabIndicatorModel" format="enum">
+            <enum name="Line" value="0"/>
+            <enum name="Triangle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--自定义标签布局-->
+    <declare-styleable name="LabelView">
+        <attr name="gravity" format="enum">
+            <enum name="LEFT" value="0"/>
+            <enum name="RIGHT" value="1"/>
+            <enum name="CENTER" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
