@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Looper;
 
+import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import top.waws.library.activitystack.ActivityStackUtil;
@@ -133,8 +134,8 @@ public class AppUtils {
      * @param activity {@link AppCompatActivity}
      * @return {@link TabHostBuilder}
      */
-    public TabHostBuilder setupFragmentTabHost(@NonNull AppCompatActivity activity){
-        return new TabHostBuilder(activity);
+    public TabHostBuilder setupFragmentTabHost(@NonNull AppCompatActivity activity, @IdRes int contentId){
+        return new TabHostBuilder(activity,contentId);
     }
 
 
