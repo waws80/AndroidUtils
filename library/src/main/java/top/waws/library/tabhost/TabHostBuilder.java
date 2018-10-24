@@ -32,10 +32,13 @@ public class TabHostBuilder {
     //tabs
     private SparseArray<TabItem> mTabs = new SparseArray<>();
 
-    public TabHostBuilder(@NonNull AppCompatActivity activity) {
+    @IdRes
+    private int mContentId;
+
+    public TabHostBuilder(@NonNull AppCompatActivity activity, @IdRes int contentId) {
         mActivityWrf = new WeakReference<>(activity);
-        mActivityWrf.get().setContentView(R.layout.activity_apputils_tabhost);
         mTabHostWrf = new WeakReference<>(mActivityWrf.get().findViewById(android.R.id.tabhost));
+        mContentId = contentId;
         setup();
     }
 
@@ -43,7 +46,7 @@ public class TabHostBuilder {
         if (isOk()){
             mTabHostWrf.get().setup(mActivityWrf.get(),
                     mActivityWrf.get().getSupportFragmentManager(),
-                    R.id.contentLayout);
+                    mContentId);
         }
     }
 
