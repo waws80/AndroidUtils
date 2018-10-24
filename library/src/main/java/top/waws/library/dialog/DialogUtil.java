@@ -65,13 +65,13 @@ public class DialogUtil {
         return this;
     }
 
-    public void show(FragmentManager manager){
-        BaseDialog mDialog = new BaseDialog();
-        mDialog.setLayoutId(mLayout);
-        mDialog.setAnim(mAnimType);
-        mDialog.setInitViewCall(mCall);
-        mDialog.setOutSideAlpha(mDialogOutSideAlpha);
-        mDialog.show(manager,mDialog.getTag());
+    public BaseDialog create(){
+        BaseDialog dialog = new BaseDialog();
+        dialog.setLayoutId(mLayout);
+        dialog.setAnim(mAnimType);
+        dialog.setInitViewCall(mCall);
+        dialog.setOutSideAlpha(mDialogOutSideAlpha);
+        return dialog;
     }
 
 
