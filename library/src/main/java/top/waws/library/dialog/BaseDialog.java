@@ -96,7 +96,7 @@ public class BaseDialog extends DialogFragment {
         return dialog;
     }
 
-    void setInitViewCall(DialogUtil.InitViewCall mCall) {
+    public void setInitViewCall(DialogUtil.InitViewCall mCall) {
         this.mViewCall = mCall;
     }
 
