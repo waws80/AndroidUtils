@@ -28,9 +28,7 @@ import top.waws.library.AppUtils;
  */
 public class DateFormatUtil {
 
-    private DateFormatUtil(){
-        throw new IllegalArgumentException("DateFormatUtil can not use new DateUtil()");
-    }
+    private DateFormatUtil(){}
 
     private static final class Inner{
         private static final DateFormatUtil DATE_FORMAT_UTIL = new DateFormatUtil();
