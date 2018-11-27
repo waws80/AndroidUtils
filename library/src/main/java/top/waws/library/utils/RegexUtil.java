@@ -16,9 +16,7 @@ import androidx.annotation.NonNull;
  */
 public class RegexUtil {
 
-    private RegexUtil() {
-        throw new UnsupportedOperationException("u can't instantiate me...");
-    }
+    private RegexUtil() {}
 
     ///////////////////////////////////////////////////////////////////////////
     // If u want more please visit http://toutiao.com/i6231678548520731137
